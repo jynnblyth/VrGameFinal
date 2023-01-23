@@ -31,7 +31,7 @@ Created by Jynn Blyth M. Nicolas
 
       <a-sky color="#778786"></a-sky>
 
-      <!-- Mixins -->
+       <!-- Mixins -->
       <a-assets>
         <a-mixin id="foliage" geometry="
             primitive: cone;
@@ -44,7 +44,7 @@ Created by Jynn Blyth M. Nicolas
             height:0.5;
             width:0.1;
             depth:0.1;"
-           material="color:red;"></a-mixin>
+           material="color:white;"></a-mixin>
         <a-mixin id="title" text="
             font:exo2bold;
             height:40;
@@ -77,9 +77,9 @@ Created by Jynn Blyth M. Nicolas
           type: directional;
           castShadow: true;
           intensity: 0.4;
-          color: #00FF00;"
+          color: #D0EAF9;"
         position="5 3 1"></a-entity>
-      <a-light intensity="0.8" type="ambient" position="1 1 1" color="#00FF00"></a-light>
+      <a-light intensity="0.8" type="ambient" position="1 1 1" color="#B4C5EC"></a-light>
 
       <!-- Camera! -->
       <a-camera camera-listener onload-init-mirrorvr wasd-controls-enabled="false" lane-controls position="0 0 2.5">
@@ -149,7 +149,7 @@ Created by Jynn Blyth M. Nicolas
               </a-entity>
               <a-text value="ERGO" mixin="title"></a-text>
             </a-entity>
-            <a-entity id="game over" position="0 1.1 -3">
+            <a-entity id="game-over" position="0 1.1 -3">
               <a-text value="?" mixin="heading" id="game-score" position="0 1.7 0"></a-text>
               <a-text value="Score" mixin="copy" position="0 1.2 0"></a-text>
               <a-text id="game-over-copy-desktop" value="Hit any key to play again." mixin="copy" position="0 0.8 0"></a-text>
